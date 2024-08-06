@@ -1,0 +1,141 @@
+:root {
+  --main-color: #0a66c2;
+  --main-dark-color: #004182;
+  --Landing-Page-Heading-Color: #b24020;
+  --border-color: #00000029;
+  --text-Button-primary-color: #000000bf;
+  --text-secondary-color: #00000099;
+  --button-hover-color: #000000ea;
+  --container-color: #000000bf;
+  --Input-Text-color: #000000e6;
+  --box-shadow-color: #0000004d;
+  --btn-hover-color-1: #f2f2f2;
+  --btn-hover-color-2: #ecf6ff;
+  --btn-active-color: #e8e8e8;
+  --links-visited-color: #8344cc;
+  --Slider-section-bgc: #f3f2f0;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --List-items-bgc: #eae6df;
+}
+.FooterItems {
+  display: flex;
+  max-width: 1128px;
+  margin: 0 19.5rem;
+  min-height: 50px;
+  padding: 0;
+  & .FooterItem {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    flex-direction: row;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    text-align: left;
+    position: relative;
+    & .LinkedIn_Logo {
+      display: block;
+      width: 5.6rem;
+      margin-right: 0.8rem;
+      display: inline-block;
+    }
+    & .FooterItem_Link {
+      text-decoration: none;
+      color: var(--text-secondary-color);
+      font-weight: 600;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+        Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+        sans-serif;
+      &:hover {
+        color: var(--main-dark-color);
+        text-decoration: underline;
+      }
+    }
+    &:first-child > .copyright_Text {
+      color: var(--text-secondary-color);
+      cursor: default;
+    }
+
+    &:last-child > .Language_LI_Div {
+      & .Languages_List {
+        display: none;
+        background-color: var(--white-color);
+        position: absolute;
+        bottom: 100%;
+        width: auto;
+        padding: 0;
+        box-shadow: 0px 4px 12px var(--box-shadow-color);
+        max-height: 90vh;
+        left: -10%;
+        overflow-y: auto;
+        z-index: 9999;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        list-style: none;
+        & .Language {
+          text-align: left;
+          & .Language_btn {
+            border: none;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont,
+              "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen,
+              "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji",
+              "Segoe UI Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+              "Lucida Grande", Helvetica, Arial, sans-serif;
+            font-size: 1.2rem;
+            font-weight: 300 !important;
+            padding: 0.5rem 1.6rem;
+            width: 100%;
+            background-color: transparent;
+            color: var(--main-color);
+            &:hover {
+              background-color: var(--main-color);
+              color: var(--white-color);
+            }
+            &:active {
+              background-color: var(--main-color);
+              color: var(--white-color);
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      & .FooterItem_Btn {
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+          Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+          sans-serif;
+        text-decoration: none;
+        color: var(--text-secondary-color);
+        font-weight: 600;
+        font-size: 1.2rem;
+        &:hover {
+          color: var(--main-dark-color);
+        }
+        > .Language_Text {
+          margin-right: 0.3rem;
+        }
+      }
+    }
+    &:last-child > .Language_LI_Div {
+      .show_div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

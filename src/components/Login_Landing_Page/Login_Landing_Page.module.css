@@ -1,0 +1,82 @@
+:root {
+  --Landing-Page-Heading-Color: #b24020;
+  --main-color: #0a66c2;
+  --text-Button-primary-color: #000000bf;
+  --text-secondary-color: #00000099;
+  --button-hover-color: #000000ea;
+}
+
+.Main_Container {
+  margin-left: 19.5rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap: 0 3rem;
+  padding-top: 4rem;
+
+  & .Main_text_content {
+    width: 40%;
+    & .landing_Page_Heading {
+      color: var(--Landing-Page-Heading-Color);
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+        Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+        sans-serif;
+      font-size: 5.6rem;
+      font-weight: 300;
+      line-height: 67px;
+    }
+    & .login_section {
+      margin-top: 2.4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 40.8rem;
+      & .section_Divider_div {
+        padding: 0.8rem 0 1.4rem;
+        & .section_Divider_text {
+          font-size: 1.4rem;
+          font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+            Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+            Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica,
+            Arial, sans-serif;
+          color: rgba(0, 0, 0, 0.9);
+          padding: 0 1.6rem;
+          width: 47px;
+          text-align: center;
+        }
+        .section_Divider_text::before {
+          position: relative;
+          top: 11px;
+          right: 195px;
+          content: "";
+          display: block;
+          width: 179px;
+          border-top: 1px solid #00000059;
+        }
+        .section_Divider_text::after {
+          position: relative;
+          bottom: 8px;
+          left: 31px;
+          content: "";
+          display: block;
+          width: 179px;
+          border-top: 1px solid #00000059;
+        }
+      }
+    }
+  }
+  & .Main_Page_Image {
+    width: 60%;
+    margin: 7.5rem 1rem 0 0;
+    & .Landing_Page_Image {
+      width: 700px;
+      height: 560px;
+    }
+  }
+}

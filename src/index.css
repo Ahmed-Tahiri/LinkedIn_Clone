@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    vertical-align: baseline;
+    background-color: transparent;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+

@@ -1,0 +1,224 @@
+:root {
+  --Landing-Page-Heading-Color: #b24020;
+  --main-color: #0a66c2;
+  --main-dark-color: #004182;
+  --text-Button-primary-color: #000000bf;
+  --text-secondary-color: #00000099;
+  --button-hover-color: #000000ea;
+  --container-color: #000000bf;
+  --btn-hover-color-1: #f2f2f2;
+  --btn-hover-color-2: #ecf6ff;
+  --Input-Text-color: #000000e6;
+  --links-visited-color: #8344cc;
+}
+
+.Sign_In_Form {
+  width: 100%;
+  & form {
+    & .userInputs {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      row-gap: 1.6rem;
+      & .Email_Div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin: 1.2rem 0;
+        & .Input_Labels {
+          margin-bottom: 0.8rem;
+          font-size: 1.4rem;
+          font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+            Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+            Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica,
+            Arial, sans-serif;
+          font-weight: 500;
+          color: var(--text-Button-primary-color);
+        }
+        & .Email_Input_Div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 5.6rem;
+          width: 100%;
+          border: 1px solid var(--container-color);
+          padding: 1.4rem 1.6rem;
+          border-radius: 0.4rem;
+          -webkit-border-radius: 0.4rem;
+          -moz-border-radius: 0.4rem;
+          -ms-border-radius: 0.4rem;
+          -o-border-radius: 0.4rem;
+          &:hover {
+            background-color: var(--btn-hover-color-1);
+            outline: 1.5px solid black;
+            border: 0.5px solid black;
+            cursor: pointer;
+          }
+          & .Sign_In_Inputs {
+            width: 100%;
+            margin: 1px;
+            padding: 1px 2px;
+            outline: none;
+            border: none;
+            font-size: 1.6rem;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont,
+              "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen,
+              "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji",
+              "Segoe UI Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+              "Lucida Grande", Helvetica, Arial, sans-serif;
+            color: var(--Input-Text-color);
+          }
+        }
+      }
+      & .Password_Div {
+        height: 5.6rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin: 1.2rem 0 2.4rem;
+        .Input_Labels {
+          margin-bottom: 0.8rem;
+          font-size: 1.4rem;
+          font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+            Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+            Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica,
+            Arial, sans-serif;
+          font-weight: 500;
+          color: var(--text-Button-primary-color);
+        }
+        & .Password_Input_Div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          border: 1px solid var(--container-color);
+          padding: 1.4rem 1.6rem;
+          border-radius: 0.4rem;
+          -webkit-border-radius: 0.4rem;
+          -moz-border-radius: 0.4rem;
+          -ms-border-radius: 0.4rem;
+          -o-border-radius: 0.4rem;
+          &:hover {
+            background-color: var(--btn-hover-color-1);
+            outline: 1.5px solid black;
+            border: 0.5px solid black;
+            cursor: pointer;
+          }
+          & .Sign_In_Inputs {
+            width: 88%;
+            margin: 1px;
+            padding: 1px 2px;
+            outline: none;
+            border: none;
+            font-size: 1.6rem;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont,
+              "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen,
+              "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji",
+              "Segoe UI Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+              "Lucida Grande", Helvetica, Arial, sans-serif;
+            color: var(--Input-Text-color);
+          }
+          & .Password_Button {
+            cursor: pointer;
+            margin-left: 1.2rem;
+            background-color: transparent;
+            border: none;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont,
+              "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen,
+              "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji",
+              "Segoe UI Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+              "Lucida Grande", Helvetica, Arial, sans-serif;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: var(--main-color);
+            padding: 0;
+          }
+        }
+      }
+    }
+    & .sign_In_options {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      & .forgot_Password {
+        display: block;
+        text-decoration: none;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+          Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+          sans-serif;
+        font-weight: 600;
+        font-size: 1.6rem;
+        color: var(--main-color);
+        line-height: 1.25;
+        margin-bottom: 2.4rem;
+        margin-top: 0.8rem;
+        width: fit-content;
+        &:hover {
+          text-decoration: underline;
+          color: var(--main-dark-color);
+        }
+      }
+      & .Sign_In_Button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.8rem 0;
+        padding: 1.2rem 2.4rem;
+        width: 100%;
+        border: none;
+        background-color: var(--main-color);
+        color: #fff;
+        border-radius: 100rem;
+        -webkit-border-radius: 100rem;
+        -moz-border-radius: 100rem;
+        -ms-border-radius: 100rem;
+        -o-border-radius: 100rem;
+        box-shadow: 0 0 0 1px #fff;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+          Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+          sans-serif;
+        font-weight: 600;
+        font-size: 1.6rem;
+        cursor: pointer;
+        &:hover {
+          background-color: var(--main-dark-color);
+        }
+      }
+    }
+    & .Join_LinkedIn {
+      margin: 1.6rem 0;
+      font-size: 1.6rem;
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+        Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+        sans-serif;
+      line-height: 1.5;
+      text-align: center;
+      & a {
+        text-decoration: none;
+        font-weight: 500;
+        color: var(--main-color);
+        &:hover {
+          text-decoration: underline;
+          color: var(--main-dark-color);
+        }
+        &:visited {
+          color: var(--links-visited-color);
+        }
+      }
+    }
+  }
+}

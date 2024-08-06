@@ -1,0 +1,111 @@
+/* Importing Google sans Font */
+
+@font-face {
+  font-family: "Product Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Product Sans Regular"),
+    url("./google-sans-webfont/ProductSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Product Sans Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Product Sans Italic"),
+    url("./google-sans-webfont/ProductSans-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Product Sans Thin Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Product Sans Thin Regular"),
+    url("./google-sans-webfont/ProductSans-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Product Sans Light Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Product Sans Light Regular"),
+    url("./google-sans-webfont/ProductSans-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Product Sans Medium Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Product Sans Medium Regular"),
+    url("./google-sans-webfont/ProductSans-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Product Sans Black Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Product Sans Black Regular"),
+    url("./google-sans-webfont/ProductSans-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Product Sans Thin Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Product Sans Thin Italic"),
+    url("./google-sans-webfont/ProductSans-ThinItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Product Sans Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Product Sans Light Italic"),
+    url("./google-sans-webfont/ProductSans-LightItalic.woff") format("woff");
+}
+
+:root {
+  --Landing-Page-Heading-Color: #b24020;
+  --main-color: #0a66c2;
+  --text-Button-primary-color: #000000bf;
+  --text-secondary-color: #00000099;
+  --button-hover-color: #000000ea;
+}
+.Google_Btn {
+  height: 4.2rem;
+  width: 40rem;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  color: #3c4043;
+  font-family: "Product Sans Medium Regular", -apple-system, system-ui,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans",
+    Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande",
+    Helvetica, Arial, sans-serif;
+  border: 1px solid var(--text-secondary-color);
+  & .Google_Text {
+    padding: 0.1rem 0 0;
+  }
+  &:hover {
+    cursor: pointer;
+    border: 2px solid var(--text-secondary-color);
+    background-color: #f9fdff;
+  }
+  & i {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.1rem;
+  }
+}

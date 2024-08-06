@@ -1,0 +1,118 @@
+:root {
+  --main-color: #0a66c2;
+  --main-dark-color: #004182;
+  --Landing-Page-Heading-Color: #b24020;
+  --border-color: #00000029;
+  --text-Button-primary-color: #000000bf;
+  --text-secondary-color: #00000099;
+  --button-hover-color: #000000ea;
+  --container-color: #000000bf;
+  --Input-Text-color: #000000e6;
+  --box-shadow-color: #0000004d;
+  --btn-hover-color-1: #f2f2f2;
+  --btn-hover-color-2: #ecf6ff;
+  --btn-active-color: #e8e8e8;
+  --links-visited-color: #8344cc;
+  --Slider-section-bgc: #f3f2f0;
+  --white-color: #ffffff;
+  --List-items-bgc: #eae6df;
+}
+.LinkedIn_Nav_Section {
+  max-width: 1128px;
+  margin: 0 19.5rem;
+  padding: 6rem 0;
+  min-height: 840px;
+  position: relative;
+  width: 100%;
+  & .LinkedIn_Nav_Section_Content {
+    height: 720px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    & .Text_Content {
+      min-width: 50%;
+      width: 50%;
+      margin-bottom: 4.2rem;
+      padding-right: 5rem;
+      margin-top: auto;
+      & .Section_Heading {
+        margin-bottom: 0.8rem;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+          Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+          sans-serif;
+        font-size: 4rem;
+        font-weight: 400;
+        color: var(--Landing-Page-Heading-Color);
+      }
+      & .Section_Sub_Heading {
+        margin-bottom: 4rem;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+          Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+          sans-serif;
+        font-size: 4rem;
+        font-weight: 200;
+        line-height: 1.25;
+        color: var(--Input-Text-color);
+      }
+      & .section_list {
+        width: 100%;
+        padding: 0;
+        & .list_Items {
+          list-style: none;
+          margin-bottom: 1.6rem;
+          text-align: left;
+          & .list_Items_Links {
+            text-decoration: none;
+            width: 408px;
+            min-height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.6rem;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont,
+              "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen,
+              "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji",
+              "Segoe UI Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+              "Lucida Grande", Helvetica, Arial, sans-serif;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.25;
+            color: var(--Input-Text-color);
+            background-color: var(--List-items-bgc);
+            cursor: pointer;
+            &:visited {
+              color: var(--links-visited-color);
+            }
+            & .Icon {
+              color: var(--text-secondary-color);
+              /* font-size: 2em; */
+            }
+          }
+        }
+      }
+    }
+    & .Image_Container {
+      height: 840px;
+      margin-left: 9.6rem;
+      align-self: center;
+    }
+  }
+}
+
+.LinkedIn_Nav_Section_Content::after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  left: calc((1128px - 100vw) / 2);
+  width: calc(50% - calc((1128px - 100vw) / 2));
+  min-width: calc(408px + 16px + 50px);
+  height: 720px;
+  top: 60px;
+  right: calc((1128px - 100vw) / 2);
+  background-color: var(--Slider-section-bgc);
+}

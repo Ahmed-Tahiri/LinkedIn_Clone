@@ -1,0 +1,65 @@
+:root {
+  --main-color: #0a66c2;
+  --text-Button-primary-color: #000000bf;
+  --text-secondary-color: #00000099;
+  --button-hover-color: #000000ea;
+  --btn-hover-color-1: #f2f2f2;
+  --btn-hover-color-2: #ecf6ff;
+}
+
+.Buttons_Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 22rem;
+  & :first-child {
+    width: 12rem;
+    height: 4.95rem;
+    border: none;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+      Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+      sans-serif;
+    color: var(--text-Button-primary-color);
+    font-weight: 500;
+    font-size: 1.6rem;
+    background-color: transparent;
+    border-radius: 100rem;
+    -webkit-border-radius: 100rem;
+    -moz-border-radius: 100rem;
+    -ms-border-radius: 100rem;
+    -o-border-radius: 100rem;
+    &:hover {
+      background-color: var(--btn-hover-color-1);
+      cursor: pointer;
+      color: var(--button-hover-color);
+    }
+  }
+  & :last-child {
+    /*background-color: #ffb3b3;
+    */
+    width: 10.7rem;
+    height: 4.95rem;
+    border-radius: 100rem;
+    -webkit-border-radius: 100rem;
+    -moz-border-radius: 100rem;
+    -ms-border-radius: 100rem;
+    -o-border-radius: 100rem;
+    border: 1.59px solid var(--main-color);
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+      Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+      sans-serif;
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 0.3rem 1rem;
+    &:hover {
+      background-color: var(--btn-hover-color-2);
+      cursor: pointer;
+    }
+  }
+}

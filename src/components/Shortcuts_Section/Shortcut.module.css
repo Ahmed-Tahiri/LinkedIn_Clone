@@ -1,0 +1,49 @@
+:root {
+  --main-color: #0a66c2;
+  --main-dark-color: #004182;
+  --Landing-Page-Heading-Color: #b24020;
+  --border-color: #00000029;
+  --text-Button-primary-color: #000000bf;
+  --text-secondary-color: #00000099;
+  --button-hover-color: #000000ea;
+  --container-color: #000000bf;
+  --Input-Text-color: #000000e6;
+  --box-shadow-color: #0000004d;
+  --btn-hover-color-1: #f2f2f2;
+  --btn-hover-color-2: #ecf6ff;
+  --btn-active-color: #e8e8e8;
+  --links-visited-color: #8344cc;
+  --Slider-section-bgc: #f3f2f0;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --List-items-bgc: #eae6df;
+}
+
+.Shortcut_Section {
+  position: relative;
+  max-width: 1128px;
+  padding: 2.3rem 0;
+  margin: 0 19.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    width: 100vw;
+    height: 100%;
+    background-color: var(--Slider-section-bgc);
+    top: 0;
+    right: calc((1128px - 100vw) / 2);
+  }
+  & .LinkedinLogo {
+    width: 9.1rem;
+  }
+  & .Shortcuts_Main_Container {
+    padding-left: 1.6rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+}

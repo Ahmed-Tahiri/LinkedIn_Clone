@@ -1,0 +1,76 @@
+:root {
+  --Landing-Page-Heading-Color: #b24020;
+  --main-color: #0a66c2;
+  --main-dark-color: #004182;
+  --text-Button-primary-color: #000000bf;
+  --text-secondary-color: #00000099;
+  --button-hover-color: #000000ea;
+  --container-color: #000000bf;
+  --btn-hover-color-1: #f2f2f2;
+  --btn-hover-color-2: #ecf6ff;
+  --Input-Text-color: #000000e6;
+  --links-visited-color: #8344cc;
+}
+.Discover_Keywords_Main_Div {
+  max-width: 648px;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  & .Suggested_Search {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: var(--text-secondary-color);
+    font-weight: 600;
+    line-height: 1.25;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+      Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+      sans-serif;
+  }
+
+  .Discover_Keyword_Div {
+    display: flex;
+    flex-wrap: wrap;
+
+    & .Discover_Name {
+      min-width: 4.8rem;
+      width: fit-content;
+      height: min-content;
+      padding: 1.2rem 2.4rem;
+      margin: 0 0.6rem 1.2rem 0;
+      float: left;
+      background-color: transparent;
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+        Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+        sans-serif;
+      text-align: center;
+      color: var(--text-Button-primary-color);
+      text-decoration: none;
+      font-size: 1.6rem;
+      font-weight: 600;
+      border-radius: 10rem;
+      -webkit-border-radius: 10rem;
+      -moz-border-radius: 10rem;
+      -ms-border-radius: 10rem;
+      -o-border-radius: 10rem;
+      border: 0.1rem solid var(--text-Button-primary-color);
+      &:hover {
+        background-color: var(--btn-hover-color-1);
+        color: var(--button-hover-color);
+      }
+    }
+    > .Discover_Name:last-child {
+      color: var(--main-color);
+      border: 0.1rem solid var(--main-color);
+      &:hover {
+        background-color: var(--btn-hover-color-2);
+        color: var(--main-dark-color);
+      }
+    }
+  }
+}

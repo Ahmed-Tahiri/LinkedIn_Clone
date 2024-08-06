@@ -1,0 +1,222 @@
+:root {
+  --main-color: #0a66c2;
+  --main-dark-color: #004182;
+  --Landing-Page-Heading-Color: #b24020;
+  --border-color: #00000029;
+  --text-Button-primary-color: #000000bf;
+  --text-secondary-color: #00000099;
+  --button-hover-color: #000000ea;
+  --container-color: #000000bf;
+  --Input-Text-color: #000000e6;
+  --box-shadow-color: #0000004d;
+  --btn-hover-color-1: #f2f2f2;
+  --btn-hover-color-2: #ecf6ff;
+  --btn-active-color: #e8e8e8;
+  --links-visited-color: #8344cc;
+  --Slider-section-bgc: #f3f2f0;
+  --white-color: #ffffff;
+}
+
+.Skill_Connection_Section {
+  margin: 0 19.5rem;
+  max-width: 1128px;
+  padding: 6rem 0;
+  & .Skill_Connection_Section_Content {
+    padding: 12rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+
+    & .Connect_Container {
+      margin-right: 1.6rem;
+      display: flex;
+      flex-direction: column;
+
+      & .Text_Content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3.5rem;
+
+        max-width: 456px;
+        & .Connect_Heading {
+          font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+            Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+            Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica,
+            Arial, sans-serif;
+          font-size: 4.8rem;
+          font-weight: 200;
+          color: var(--Input-Text-color);
+          line-height: 1.25;
+        }
+        & .Connect_btn {
+          margin: 0 0.6rem 1.2rem 0;
+          padding: 1.2rem 2.4rem;
+          float: left;
+          border-radius: 2.4rem;
+          -webkit-border-radius: 2.4rem;
+          -moz-border-radius: 2.4rem;
+          -ms-border-radius: 2.4rem;
+          -o-border-radius: 2.4rem;
+          font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+            Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+            Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica,
+            Arial, sans-serif;
+          font-size: 1.6rem;
+          font-weight: 600;
+          box-shadow: 0 0 0 1px var(--text-Button-primary-color);
+          color: var(--text-Button-primary-color);
+          text-decoration: none;
+          width: fit-content;
+          &:hover {
+            cursor: pointer;
+            background-color: var(--btn-hover-color-1);
+            color: var(--button-hover-color);
+          }
+        }
+      }
+    }
+    & .Skill_Container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      & .Text_Content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3.5rem;
+        max-width: 456px;
+        & .Skill_Heading {
+          font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+            Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+            Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica,
+            Arial, sans-serif;
+          font-size: 4.8rem;
+          font-weight: 200;
+          color: var(--Input-Text-color);
+          line-height: 1.25;
+        }
+        & .DropDown_Div {
+          & .Dropdown_btn {
+            padding: 1.5rem 1.2rem 1.5rem 1.6rem;
+            width: 360px;
+            background-color: var(--white-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            -webkit-border-radius: 0.5rem;
+            -moz-border-radius: 0.5rem;
+            -ms-border-radius: 0.5rem;
+            -o-border-radius: 0.5rem;
+            &:hover {
+              background-color: var(--btn-hover-color-1);
+              color: var(--Input-Text-color);
+            }
+            &:active {
+              background-color: var(--btn-active-color);
+            }
+            & .Dropdown_btn_text {
+              font-family: -apple-system, system-ui, BlinkMacSystemFont,
+                "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu,
+                Oxygen, "Oxygen Sans", Cantarell, "Droid Sans",
+                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+                "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+              font-weight: 400;
+              font-size: 2rem;
+              line-height: 1.25;
+              color: var(--Input-Text-color);
+            }
+            & span {
+              font-size: 1rem;
+              & .downArrow {
+                margin-left: 0.5rem;
+                height: 3em !important;
+                width: 3em !important;
+                color: var(--text-Button-primary-color);
+                &:hover {
+                  color: var(--Input-Text-color);
+                }
+                &:active {
+                  color: var(--Landing-Page-Heading-Color);
+                }
+              }
+            }
+          }
+        }
+        & .DropdownItems_container {
+          display: none;
+          position: absolute;
+          background-color: var(--white-color);
+          top: 100%;
+          left: 0;
+          width: 358px;
+          z-index: 9999;
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          -ms-border-radius: 8px;
+          -o-border-radius: 8px;
+          box-shadow: 0px 4px 12px var(--box-shadow-color);
+          border: none;
+
+          & .DropdownItems {
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+            width: 358px;
+            max-height: 380px;
+            overflow: scroll;
+            margin: 0.4rem 0 0 0;
+            padding: 0 0 1.6rem 0;
+
+            & .coursesName {
+              margin: 1.6rem 0.8rem 0 1.6rem;
+              list-style: none;
+              text-align: left;
+              & .courses_links {
+                text-decoration: none;
+                display: flex;
+                &:hover {
+                  text-decoration: underline;
+                }
+                flex-direction: column;
+                & .Course_title {
+                  font-family: -apple-system, system-ui, BlinkMacSystemFont,
+                    "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu,
+                    Oxygen, "Oxygen Sans", Cantarell, "Droid Sans",
+                    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+                    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+                    sans-serif;
+                  font-size: 1.6rem;
+                  font-weight: 600;
+                  line-height: 1.25;
+                  color: var(--Input-Text-color);
+                }
+                & .Course_Number {
+                  font-family: -apple-system, system-ui, BlinkMacSystemFont,
+                    "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu,
+                    Oxygen, "Oxygen Sans", Cantarell, "Droid Sans",
+                    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+                    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+                    sans-serif;
+                  font-size: 1.6rem;
+                  font-weight: 400;
+                  line-height: 1.25;
+                  color: var(--text-secondary-color);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.Skill_Connection_Section .show {
+  display: block !important;
+}

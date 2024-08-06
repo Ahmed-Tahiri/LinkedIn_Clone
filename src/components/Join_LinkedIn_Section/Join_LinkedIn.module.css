@@ -1,0 +1,91 @@
+:root {
+  --main-color: #0a66c2;
+  --main-dark-color: #004182;
+  --Landing-Page-Heading-Color: #b24020;
+  --border-color: #00000029;
+  --text-Button-primary-color: #000000bf;
+  --text-secondary-color: #00000099;
+  --button-hover-color: #000000ea;
+  --container-color: #000000bf;
+  --Input-Text-color: #000000e6;
+  --box-shadow-color: #0000004d;
+  --btn-hover-color-1: #f2f2f2;
+  --btn-hover-color-2: #ecf6ff;
+  --btn-active-color: #e8e8e8;
+  --links-visited-color: #8344cc;
+  --Slider-section-bgc: #f3f2f0;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --List-items-bgc: #eae6df;
+}
+.Join_LinkedIn_Section {
+  max-width: 1128px;
+  padding: 6rem 0;
+  margin: 0 19.5rem;
+  min-height: 840px;
+  position: relative;
+  & .text_content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    & .Section_Heading {
+      margin: 4.8rem 0 1.6rem 0;
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+        Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+        sans-serif;
+      font-size: 5.6rem;
+      font-weight: 200;
+      word-break: keep-all;
+      color: var(--Input-Text-color);
+      line-height: 8.4rem;
+    }
+    & .btn {
+      cursor: pointer;
+      border: none;
+      margin: 0 0.6rem 1.2rem 0;
+      padding: 1.2rem 2.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+      height: min-content;
+      min-height: 4.8rem;
+      box-shadow: 0 0 0 1px #00000000;
+      background-color: var(--main-color);
+      color: var(--white-color);
+      text-decoration: none;
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+        Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+        sans-serif;
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 600;
+      border-radius: 24px;
+      -webkit-border-radius: 24px;
+      -moz-border-radius: 24px;
+      -ms-border-radius: 24px;
+      -o-border-radius: 24px;
+      &:hover {
+        background-color: var(--main-dark-color);
+      }
+    }
+  }
+}
+.Join_LinkedIn_Section::after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  background-image: url("https://static.licdn.com/aero-v1/sc/h/4ezbw852t2wrgf27zl1o1qtu7");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: auto 100%;
+  right: calc((1128px - 100vw) / 2);
+  width: 100vw;
+  height: 100%;
+  top: 0;
+}

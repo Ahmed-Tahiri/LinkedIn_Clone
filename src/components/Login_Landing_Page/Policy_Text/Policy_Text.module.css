@@ -1,0 +1,27 @@
+.Policy_text {
+  margin: 1.6rem 0 0;
+  padding: 0 0 1.6rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #00000099;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  & a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 500;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:visited {
+      color: #8344cc;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+:root {
+  --main-color: #0a66c2;
+  --text-Button-primary-color: #000000bf;
+  --text-secondary-color: #00000099;
+  --button-hover-color: #000000ea;
+}
+
+.Header_Container {
+  margin: 0 19.5rem;
+}
+.Footer_Container {
+  width: 100%;
+}

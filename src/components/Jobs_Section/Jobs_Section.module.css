@@ -1,0 +1,44 @@
+:root {
+  --Landing-Page-Heading-Color: #b24020;
+  --main-color: #0a66c2;
+  --main-dark-color: #004182;
+  --text-Button-primary-color: #000000bf;
+  --text-secondary-color: #00000099;
+  --button-hover-color: #000000ea;
+  --container-color: #000000bf;
+  --btn-hover-color-1: #f2f2f2;
+  --btn-hover-color-2: #ecf6ff;
+  --Input-Text-color: #000000e6;
+  --links-visited-color: #8344cc;
+}
+
+.Jobs_Section {
+  margin: 0 19.5rem;
+  max-width: 1128px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  padding: 6rem 0;
+  & .Jobs_Text_Div {
+    order: 1;
+    margin-right: 7.2rem;
+    height: fit-content;
+    width: 408px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    & .Jobs_Heading {
+      color: var(--Input-Text-color);
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+        Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+        sans-serif;
+      font-size: 4.8rem;
+      font-weight: 200;
+      line-height: 1.25;
+    }
+  }
+}

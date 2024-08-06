@@ -1,0 +1,15 @@
+/* Linkedin Project Theme */
+:root {
+  --main-color: #0a66c2;
+  --text-Button-primary-color: #000000bf;
+  --text-secondary-color: #00000099;
+  --black-color: #000000;
+}
+
+.LI_Logo_svg {
+  width: 100%;
+  color: var(--black-color);
+  &:active {
+    color: var(--Landing-Page-Heading-Color);
+  }
+}

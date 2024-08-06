@@ -1,0 +1,58 @@
+& .Messaging_Slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 6rem;
+  & .Slider_Text {
+    margin-right: 6.4rem;
+    height: fit-content;
+    width: 564px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    & .Slider_Section_Heading {
+      color: var(--Input-Text-color);
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+        Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+        sans-serif;
+      font-size: 4rem;
+      font-weight: 400;
+      line-height: 1.25;
+      color: var(--Landing-Page-Heading-Color);
+    }
+    & .SubHeading {
+      margin: 0.8rem 0;
+      color: var(--Input-Text-color);
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+        Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+        sans-serif;
+      font-size: 3.2rem;
+      font-weight: 200;
+      line-height: 1.25;
+    }
+  }
+  & .Slider_Img_Container {
+    clip-path: circle(50% at 50% 50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 450px;
+    background-color: #ff7676;
+    & .Slider_Img {
+      overflow: hidden;
+      /* aspect-ratio: 1; */
+      height: 450px;
+    }
+  }
+}
